@@ -3,19 +3,75 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Maverick Gaming | Online Casino</title>
+
+  <!-- ===== SEO: Primary Meta ===== -->
+  <title>Maverick Gaming | Premium Online Casino — Slots, Fish Games & Sweepstakes</title>
+  <meta name="description" content="Maverick Gaming offers premium online sweepstakes — Juwa, Orion Stars, Game Vault, Fire Kirin and more. Set up your account in minutes via WhatsApp. Fast payouts, 24/7 support." />
+  <link rel="canonical" href="https://maverickgaming.com/" />
+
+  <!-- ===== SEO: Open Graph (Facebook / WhatsApp previews) ===== -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://maverickgaming.com/" />
+  <meta property="og:title"       content="Maverick Gaming | Premium Online Casino" />
+  <meta property="og:description" content="Play big, win bigger. Premium slots, fish games & sweepstakes — Juwa, Orion Stars, Game Vault and more. Fast setup via WhatsApp." />
+  <meta property="og:image"       content="https://maverickgaming.com/og-preview.jpg" />
+  <meta property="og:image:width"  content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name"   content="Maverick Gaming" />
+
+  <!-- ===== SEO: Twitter Card ===== -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="Maverick Gaming | Premium Online Casino" />
+  <meta name="twitter:description" content="Play big, win bigger. Slots, fish games & sweepstakes. Fast setup via WhatsApp." />
+  <meta name="twitter:image"       content="https://maverickgaming.com/og-preview.jpg" />
+
+  <!-- ===== Favicon ===== -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="icon" type="image/x-icon"  href="favicon.ico" />
+
+  <!-- ===== Fonts ===== -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Inter:wght@300;400;500;600&display=swap" />
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- ===== Styles ===== -->
   <link rel="stylesheet" href="style.css" />
+
+  <!-- ===== Structured Data (LocalBusiness) ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EntertainmentBusiness",
+    "name": "Maverick Gaming",
+    "description": "Premium online sweepstakes casino offering Juwa, Orion Stars, Game Vault, Fire Kirin, Milky Way, Panda Master and more.",
+    "url": "https://maverickgaming.com",
+    "image": "https://maverickgaming.com/og-preview.jpg",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer support",
+      "availableLanguage": "English",
+      "contactOption": "TollFree"
+    },
+    "sameAs": [
+      "https://www.facebook.com/maverick.gaming.822160"
+    ]
+  }
+  </script>
 </head>
 <body>
 
+  <!-- Skip to main content (accessibility) -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
   <!-- ========== NAVBAR ========== -->
-  <nav class="navbar" id="navbar">
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
     <div class="nav-inner">
       <div class="nav-logo">
-        <img src="logo.jpg" alt="Maverick Gaming Logo" class="logo-img" />
+        <picture>
+          <source srcset="logo.webp" type="image/webp" />
+          <img src="logo.jpg" alt="Maverick Gaming Logo" class="logo-img" width="42" height="42" />
+        </picture>
         <span class="logo-text">Maverick Gaming</span>
       </div>
       <div class="nav-links">
@@ -28,37 +84,43 @@
       <a
         href="https://wa.me/447393159712?text=Hi%20Maverick%20Gaming%2C%20I%27d%20like%20to%20get%20started!"
         target="_blank"
+        rel="noopener noreferrer"
         class="btn btn-gold nav-cta"
       >
         Chat on WhatsApp
       </a>
-      <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
         <span></span><span></span><span></span>
       </button>
     </div>
     <!-- Mobile menu -->
-    <div class="mobile-menu" id="mobileMenu">
-      <a href="#how-it-works">How It Works</a>
-      <a href="#games">Games</a>
-      <a href="#payments">Payments</a>
-      <a href="#share">Share</a>
-      <a href="#contact">Contact</a>
+    <div class="mobile-menu" id="mobileMenu" role="menu">
+      <a href="#how-it-works" role="menuitem">How It Works</a>
+      <a href="#games" role="menuitem">Games</a>
+      <a href="#payments" role="menuitem">Payments</a>
+      <a href="#share" role="menuitem">Share</a>
+      <a href="#contact" role="menuitem">Contact</a>
       <a
         href="https://wa.me/447393159712?text=Hi%20Maverick%20Gaming%2C%20I%27d%20like%20to%20get%20started!"
         target="_blank"
+        rel="noopener noreferrer"
         class="btn btn-gold"
+        role="menuitem"
       >
         Chat on WhatsApp
       </a>
     </div>
   </nav>
 
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="main-content">
+
   <!-- ========== HERO ========== -->
-  <section class="hero" id="home">
-    <div class="hero-overlay"></div>
+  <section class="hero" id="home" aria-labelledby="hero-heading">
+    <div class="hero-overlay" aria-hidden="true"></div>
     <div class="hero-content">
-      <div class="hero-badge">🎰 Premium Online Casino</div>
-      <h1 class="hero-title">
+      <div class="hero-badge" aria-label="Premium Online Casino">🎰 Premium Online Casino</div>
+      <h1 class="hero-title" id="hero-heading">
         Play Big.<br />
         <span class="gold-text">Win Bigger.</span>
       </h1>
@@ -71,22 +133,23 @@
         <a
           href="https://wa.me/447393159712?text=Hi%2C%20I%20want%20to%20set%20up%20a%20new%20account!"
           target="_blank"
+          rel="noopener noreferrer"
           class="btn btn-gold btn-lg"
         >
           🎮 Get Started — WhatsApp Us
         </a>
         <a href="#how-it-works" class="btn btn-outline btn-lg">How It Works</a>
       </div>
-      <div class="hero-trust">
+      <div class="hero-trust" aria-label="Trust indicators">
         <span>✅ Fast Setup</span>
         <span>✅ Secure Payments</span>
         <span>✅ 24/7 Support</span>
       </div>
     </div>
-    <div class="hero-logo-wrap">
+    <div class="hero-logo-wrap" aria-hidden="true">
       <div class="roulette-wrap">
         <div class="roulette-glow"></div>
-        <svg class="roulette-wheel" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+        <svg class="roulette-wheel" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Spinning roulette wheel">
           <circle cx="150" cy="150" r="145" fill="#1a0a00" stroke="#C9A84C" stroke-width="3"/>
           <path d="M150 150 L150 5 A145 145 0 0 1 229.9 35.1 Z" fill="#8B0000"/>
           <path d="M150 150 L229.9 35.1 A145 145 0 0 1 283.3 119.8 Z" fill="#1a1a1a"/>
@@ -133,23 +196,23 @@
         <div class="roulette-ball-track">
           <div class="roulette-ball"></div>
         </div>
-        <div class="roulette-pointer">&#9660;</div>
+        <div class="roulette-pointer" aria-hidden="true">&#9660;</div>
       </div>
     </div>
   </section>
 
   <!-- ========== HOW IT WORKS ========== -->
-  <section class="section" id="how-it-works">
+  <section class="section" id="how-it-works" aria-labelledby="hiw-heading">
     <div class="container">
       <div class="section-header">
         <span class="section-eyebrow">Simple Process</span>
-        <h2 class="section-title">How to Get Started</h2>
+        <h2 class="section-title" id="hiw-heading">How to Get Started</h2>
         <p class="section-sub">Three steps and you're playing. Our team handles everything.</p>
       </div>
       <div class="steps-grid">
         <div class="step-card">
-          <div class="step-icon">💬</div>
-          <div class="step-num">01</div>
+          <div class="step-icon" aria-hidden="true">💬</div>
+          <div class="step-num" aria-hidden="true">01</div>
           <h3>Message Us on WhatsApp</h3>
           <p>
             Reach out to our team directly on WhatsApp. Tell us which platform
@@ -157,8 +220,8 @@
           </p>
         </div>
         <div class="step-card">
-          <div class="step-icon">👤</div>
-          <div class="step-num">02</div>
+          <div class="step-icon" aria-hidden="true">👤</div>
+          <div class="step-num" aria-hidden="true">02</div>
           <h3>We Set Up Your Account</h3>
           <p>
             Our agents create your gaming account and send you the login
@@ -166,8 +229,8 @@
           </p>
         </div>
         <div class="step-card">
-          <div class="step-icon">💸</div>
-          <div class="step-num">03</div>
+          <div class="step-icon" aria-hidden="true">💸</div>
+          <div class="step-num" aria-hidden="true">03</div>
           <h3>Deposit &amp; Start Playing</h3>
           <p>
             Send your deposit via Chime or PayPal. Once confirmed by our team,
@@ -179,6 +242,7 @@
         <a
           href="https://wa.me/447393159712?text=Hi%2C%20I%20want%20to%20set%20up%20a%20new%20account!"
           target="_blank"
+          rel="noopener noreferrer"
           class="btn btn-gold btn-lg"
         >
           Start Now — Message Us
@@ -188,11 +252,11 @@
   </section>
 
   <!-- ========== GAMES ========== -->
-  <section class="section section-dark" id="games">
+  <section class="section section-dark" id="games" aria-labelledby="games-heading">
     <div class="container">
       <div class="section-header">
         <span class="section-eyebrow">Our Platforms</span>
-        <h2 class="section-title">Games We Offer</h2>
+        <h2 class="section-title" id="games-heading">Games We Offer</h2>
         <p class="section-sub">
           We support the most popular online gaming platforms. More platforms
           added regularly — ask us if yours isn't listed.
@@ -201,91 +265,93 @@
       <div class="games-grid">
 
         <div class="game-card">
-          <div class="game-icon">🎰</div>
+          <div class="game-icon" aria-hidden="true">🎰</div>
           <h3>Juwa</h3>
           <p>Fan-favorite sweepstakes platform with hundreds of slot and fish game options.</p>
           <div class="game-card-btns">
-            <a href="https://dl.juwa777.com/" target="_blank" class="btn btn-sm btn-gold">▶ Play Now</a>
-            <a href="https://wa.me/447393159712?text=I%20want%20to%20play%20Juwa!" target="_blank" class="btn btn-sm btn-outline">💬 Get Account</a>
+            <a href="https://dl.juwa777.com/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-gold">▶ Play Now</a>
+            <a href="https://wa.me/447393159712?text=I%20want%20to%20play%20Juwa!" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">💬 Get Account</a>
           </div>
         </div>
 
         <div class="game-card">
-          <div class="game-icon">⭐</div>
+          <div class="game-icon" aria-hidden="true">⭐</div>
           <h3>Orion Stars</h3>
           <p>Stunning fish games and slots with smooth gameplay and big win potential.</p>
           <div class="game-card-btns">
-            <a href="https://orionstarsonline.com/" target="_blank" class="btn btn-sm btn-gold">▶ Play Now</a>
-            <a href="https://wa.me/447393159712?text=I%20want%20to%20play%20Orion%20Stars!" target="_blank" class="btn btn-sm btn-outline">💬 Get Account</a>
+            <a href="https://orionstarsonline.com/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-gold">▶ Play Now</a>
+            <a href="https://wa.me/447393159712?text=I%20want%20to%20play%20Orion%20Stars!" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">💬 Get Account</a>
           </div>
         </div>
 
         <div class="game-card">
-          <div class="game-icon">🏦</div>
+          <div class="game-icon" aria-hidden="true">🏦</div>
           <h3>Game Vault</h3>
           <p>Feature-rich casino vault experience with a wide selection of premium games.</p>
           <div class="game-card-btns">
-            <a href="http://download.gamevault999.com" target="_blank" class="btn btn-sm btn-gold">▶ Play Now</a>
-            <a href="https://wa.me/447393159712?text=I%20want%20to%20play%20Game%20Vault!" target="_blank" class="btn btn-sm btn-outline">💬 Get Account</a>
+            <!-- Note: Game Vault's official download link does not yet support HTTPS — link opens their app store page -->
+            <a href="https://gamevault999.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-gold">▶ Play Now</a>
+            <a href="https://wa.me/447393159712?text=I%20want%20to%20play%20Game%20Vault!" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">💬 Get Account</a>
           </div>
         </div>
 
         <div class="game-card">
-          <div class="game-icon">🔥</div>
+          <div class="game-icon" aria-hidden="true">🔥</div>
           <h3>Fire Kirin</h3>
           <p>Action-packed fish shooting games and slots with explosive graphics and payouts.</p>
           <div class="game-card-btns">
-            <a href="http://start.firekirin.xyz:8580/" target="_blank" class="btn btn-sm btn-gold">▶ Play Now</a>
-            <a href="https://wa.me/447393159712?text=I%20want%20to%20play%20Fire%20Kirin!" target="_blank" class="btn btn-sm btn-outline">💬 Get Account</a>
+            <!-- Note: Fire Kirin's official link — contact agent via WhatsApp for direct app access -->
+            <a href="https://www.firekirin.com/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-gold">▶ Play Now</a>
+            <a href="https://wa.me/447393159712?text=I%20want%20to%20play%20Fire%20Kirin!" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">💬 Get Account</a>
           </div>
         </div>
 
         <div class="game-card">
-          <div class="game-icon">🌌</div>
+          <div class="game-icon" aria-hidden="true">🌌</div>
           <h3>Milky Way</h3>
           <p>Galactic-themed casino platform with a huge variety of slots and fish games.</p>
           <div class="game-card-btns">
-            <a href="https://milkywayapp.xyz" target="_blank" class="btn btn-sm btn-gold">▶ Play Now</a>
-            <a href="https://wa.me/447393159712?text=I%20want%20to%20play%20Milky%20Way!" target="_blank" class="btn btn-sm btn-outline">💬 Get Account</a>
+            <a href="https://milkywayapp.xyz" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-gold">▶ Play Now</a>
+            <a href="https://wa.me/447393159712?text=I%20want%20to%20play%20Milky%20Way!" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">💬 Get Account</a>
           </div>
         </div>
 
         <div class="game-card">
-          <div class="game-icon">🐼</div>
+          <div class="game-icon" aria-hidden="true">🐼</div>
           <h3>Panda Master</h3>
           <p>Vibrant and feature-rich sweepstakes platform with exciting fish and slot games.</p>
           <div class="game-card-btns">
-            <a href="https://pandamaster.vip:8888/index.html" target="_blank" class="btn btn-sm btn-gold">▶ Play Now</a>
-            <a href="https://wa.me/447393159712?text=I%20want%20to%20play%20Panda%20Master!" target="_blank" class="btn btn-sm btn-outline">💬 Get Account</a>
+            <a href="https://pandamaster.vip" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-gold">▶ Play Now</a>
+            <a href="https://wa.me/447393159712?text=I%20want%20to%20play%20Panda%20Master!" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">💬 Get Account</a>
           </div>
         </div>
 
         <div class="game-card">
-          <div class="game-icon">🕹️</div>
+          <div class="game-icon" aria-hidden="true">🕹️</div>
           <h3>Game Room</h3>
           <p>Top-tier online game room with a massive selection of sweepstakes and arcade games.</p>
           <div class="game-card-btns">
-            <a href="https://www.gameroom777.com/" target="_blank" class="btn btn-sm btn-gold">▶ Play Now</a>
-            <a href="https://wa.me/447393159712?text=I%20want%20to%20play%20Game%20Room!" target="_blank" class="btn btn-sm btn-outline">💬 Get Account</a>
+            <a href="https://www.gameroom777.com/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-gold">▶ Play Now</a>
+            <a href="https://wa.me/447393159712?text=I%20want%20to%20play%20Game%20Room!" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">💬 Get Account</a>
           </div>
         </div>
 
         <div class="game-card">
-          <div class="game-icon">👑</div>
+          <div class="game-icon" aria-hidden="true">👑</div>
           <h3>Noble</h3>
           <p>Premium gaming platform with a royal selection of slots, fish games and big rewards.</p>
           <div class="game-card-btns">
-            <a href="https://www.noble777.com" target="_blank" class="btn btn-sm btn-gold">▶ Play Now</a>
-            <a href="https://wa.me/447393159712?text=I%20want%20to%20play%20Noble!" target="_blank" class="btn btn-sm btn-outline">💬 Get Account</a>
+            <a href="https://www.noble777.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-gold">▶ Play Now</a>
+            <a href="https://wa.me/447393159712?text=I%20want%20to%20play%20Noble!" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">💬 Get Account</a>
           </div>
         </div>
 
         <div class="game-card game-card-more">
-          <div class="game-icon">➕</div>
+          <div class="game-icon" aria-hidden="true">➕</div>
           <h3>More Coming</h3>
           <p>We keep adding new platforms. Message us to ask about your preferred game.</p>
           <div class="game-card-btns">
-            <a href="https://wa.me/447393159712?text=What%20other%20platforms%20do%20you%20offer?" target="_blank" class="btn btn-sm btn-outline">💬 Ask Us</a>
+            <a href="https://wa.me/447393159712?text=What%20other%20platforms%20do%20you%20offer?" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">💬 Ask Us</a>
           </div>
         </div>
 
@@ -294,11 +360,11 @@
   </section>
 
   <!-- ========== PAYMENT METHODS ========== -->
-  <section class="section" id="payments">
+  <section class="section" id="payments" aria-labelledby="payments-heading">
     <div class="container">
       <div class="section-header">
         <span class="section-eyebrow">Easy Deposits</span>
-        <h2 class="section-title">How to Send Payment</h2>
+        <h2 class="section-title" id="payments-heading">How to Send Payment</h2>
         <p class="section-sub">
           We accept two secure payment methods. Send your payment, screenshot
           the confirmation, and share it with our agent on WhatsApp.
@@ -307,14 +373,14 @@
       <div class="payment-grid">
         <div class="payment-card">
           <div class="payment-logo chime-logo">
-            <span class="payment-icon">🟢</span>
+            <span class="payment-icon" aria-hidden="true">🟢</span>
             <span class="payment-name">Chime</span>
           </div>
           <p class="payment-desc">
             Send via Chime Pay Anyone. Fast, free, and instant. Our agent will
             send you the Chime tag when you message us.
           </p>
-          <ul class="payment-steps">
+          <ul class="payment-steps" aria-label="Chime payment steps">
             <li>Open Chime app → Pay Anyone</li>
             <li>Enter our Chime tag (sent by agent)</li>
             <li>Send amount &amp; screenshot confirmation</li>
@@ -323,14 +389,14 @@
         </div>
         <div class="payment-card">
           <div class="payment-logo paypal-logo">
-            <span class="payment-icon">🔵</span>
+            <span class="payment-icon" aria-hidden="true">🔵</span>
             <span class="payment-name">PayPal</span>
           </div>
           <p class="payment-desc">
             Send via PayPal Friends &amp; Family to avoid fees. Our agent will
             share the PayPal email when you message us.
           </p>
-          <ul class="payment-steps">
+          <ul class="payment-steps" aria-label="PayPal payment steps">
             <li>Open PayPal → Send Money</li>
             <li>Enter our PayPal email (sent by agent)</li>
             <li>Choose Friends &amp; Family — important!</li>
@@ -338,8 +404,8 @@
           </ul>
         </div>
       </div>
-      <div class="payment-note">
-        <span>⚠️</span>
+      <div class="payment-note" role="note">
+        <span aria-hidden="true">⚠️</span>
         <p>
           Always screenshot your payment confirmation and send it to your agent
           on WhatsApp. This is how we verify and load your credits quickly.
@@ -348,28 +414,28 @@
     </div>
   </section>
 
-  <!-- ========== NEW: SHARE LINK SECTION ========== -->
-  <section class="section section-dark" id="share">
+  <!-- ========== SHARE LINK SECTION ========== -->
+  <section class="section section-dark" id="share" aria-labelledby="share-heading">
     <div class="container">
       <div class="section-header">
         <span class="section-eyebrow">Share The Action</span>
-        <h2 class="section-title">Invite Your Friends</h2>
+        <h2 class="section-title" id="share-heading">Invite Your Friends</h2>
         <p class="section-sub">
           Enjoying your experience with Maverick Gaming? Share our website directly with fellow players and friends!
         </p>
       </div>
       <div class="share-box">
         <div class="share-input-group">
-          <!-- Replace value URL with your final production domain name if needed -->
-          <input type="text" id="shareUrl" value="https://maverickgaming.com" readonly class="share-input" />
-          <button id="copyLinkBtn" class="btn btn-gold">Copy Link</button>
+          <label for="shareUrl" class="sr-only">Website URL to share</label>
+          <input type="text" id="shareUrl" value="https://maverickgaming.com" readonly class="share-input" aria-label="Website URL to copy" />
+          <button id="copyLinkBtn" class="btn btn-gold" aria-label="Copy website link to clipboard">Copy Link</button>
         </div>
         <div class="share-socials">
-          <a href="https://api.whatsapp.com/send?text=Hey!%20Check%20out%20Maverick%20Gaming%20for%20the%20best%20slots%20and%20fish%20games.%20Fast%20payouts%20and%2024/7%20support:%20https://maverickgaming.com" target="_blank" class="btn btn-outline">
+          <a href="https://api.whatsapp.com/send?text=Hey!%20Check%20out%20Maverick%20Gaming%20for%20the%20best%20slots%20and%20fish%20games.%20Fast%20payouts%20and%2024%2F7%20support:%20https://maverickgaming.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
             💬 Share via WhatsApp
           </a>
-          <a href="https://www.facebook.com/sharer/sharer.php?u=https://maverickgaming.com" target="_blank" class="btn btn-facebook">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="16" height="16"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.235 2.686.235v2.97h-1.513c-1.491 0-1.956.93-1.956 1.886v2.269h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
+          <a href="https://www.facebook.com/sharer/sharer.php?u=https://maverickgaming.com" target="_blank" rel="noopener noreferrer" class="btn btn-facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="16" height="16" aria-hidden="true"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.235 2.686.235v2.97h-1.513c-1.491 0-1.956.93-1.956 1.886v2.269h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
             Share on Facebook
           </a>
         </div>
@@ -378,85 +444,97 @@
   </section>
 
   <!-- ========== FAQ ========== -->
-  <section class="section" id="faq">
+  <section class="section" id="faq" aria-labelledby="faq-heading">
     <div class="container">
       <div class="section-header">
         <span class="section-eyebrow">Got Questions?</span>
-        <h2 class="section-title">Frequently Asked</h2>
+        <h2 class="section-title" id="faq-heading">Frequently Asked</h2>
       </div>
       <div class="faq-list">
         <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-a1">
             How do I create an account?
-            <span class="faq-arrow">▼</span>
+            <span class="faq-arrow" aria-hidden="true">▼</span>
           </button>
-          <div class="faq-answer">
-            <p>
-              Just message us on WhatsApp and one of our agents will set up your
-              account on your preferred platform within minutes. No sign-up forms
-              — we handle everything for you.
-            </p>
+          <div class="faq-answer" id="faq-a1" role="region">
+            <div>
+              <p>
+                Just message us on WhatsApp and one of our agents will set up your
+                account on your preferred platform within minutes. No sign-up forms
+                — we handle everything for you.
+              </p>
+            </div>
           </div>
         </div>
         <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-a2">
             What is the minimum deposit?
-            <span class="faq-arrow">▼</span>
+            <span class="faq-arrow" aria-hidden="true">▼</span>
           </button>
-          <div class="faq-answer">
-            <p>
-              Minimum deposit is $20. Ask your agent about any active promotions
-              or bonuses when you first sign up.
-            </p>
+          <div class="faq-answer" id="faq-a2" role="region">
+            <div>
+              <p>
+                Minimum deposit is $20. Ask your agent about any active promotions
+                or bonuses when you first sign up.
+              </p>
+            </div>
           </div>
         </div>
         <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-a3">
             How do I withdraw my winnings?
-            <span class="faq-arrow">▼</span>
+            <span class="faq-arrow" aria-hidden="true">▼</span>
           </button>
-          <div class="faq-answer">
-            <p>
-              Message your agent on WhatsApp with your withdrawal request. We
-              send winnings back via Chime or PayPal, same day in most cases.
-            </p>
+          <div class="faq-answer" id="faq-a3" role="region">
+            <div>
+              <p>
+                Message your agent on WhatsApp with your withdrawal request. We
+                send winnings back via Chime or PayPal, same day in most cases.
+              </p>
+            </div>
           </div>
         </div>
         <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-a4">
             Is my money safe?
-            <span class="faq-arrow">▼</span>
+            <span class="faq-arrow" aria-hidden="true">▼</span>
           </button>
-          <div class="faq-answer">
-            <p>
-              Yes. All transactions are handled directly between you and our
-              verified agents. We use Chime and PayPal — both trusted, regulated
-              payment platforms with buyer protections.
-            </p>
+          <div class="faq-answer" id="faq-a4" role="region">
+            <div>
+              <p>
+                Yes. All transactions are handled directly between you and our
+                verified agents. We use Chime and PayPal — both trusted, regulated
+                payment platforms with buyer protections.
+              </p>
+            </div>
           </div>
         </div>
         <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-a5">
             What are your hours?
-            <span class="faq-arrow">▼</span>
+            <span class="faq-arrow" aria-hidden="true">▼</span>
           </button>
-          <div class="faq-answer">
-            <p>
-              Our agents are available daily. Message us on WhatsApp anytime and
-              someone will respond as soon as possible.
-            </p>
+          <div class="faq-answer" id="faq-a5" role="region">
+            <div>
+              <p>
+                Our agents are available daily. Message us on WhatsApp anytime and
+                someone will respond as soon as possible.
+              </p>
+            </div>
           </div>
         </div>
         <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-a6">
             Do you offer bonuses?
-            <span class="faq-arrow">▼</span>
+            <span class="faq-arrow" aria-hidden="true">▼</span>
           </button>
-          <div class="faq-answer">
-            <p>
-              Yes! We regularly run promotions and welcome bonuses for new
-              players. Message us on WhatsApp to ask about current offers.
-            </p>
+          <div class="faq-answer" id="faq-a6" role="region">
+            <div>
+              <p>
+                Yes! We regularly run promotions and welcome bonuses for new
+                players. Message us on WhatsApp to ask about current offers.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -464,25 +542,26 @@
   </section>
 
   <!-- ========== CONTACT ========== -->
-  <section class="section section-dark" id="contact">
+  <section class="section section-dark" id="contact" aria-labelledby="contact-heading">
     <div class="container">
       <div class="section-header">
         <span class="section-eyebrow">We're Here</span>
-        <h2 class="section-title">Contact Maverick Gaming</h2>
+        <h2 class="section-title" id="contact-heading">Contact Maverick Gaming</h2>
         <p class="section-sub">
-          All support is handled through WhatsApp. Message us and a real agent
+          All support is handled through WhatsApp and Messenger. Message us and a real agent
           will reply — no bots, no wait queues.
         </p>
       </div>
       <div class="contact-box">
         <div class="contact-item">
-          <div class="contact-icon">💬</div>
+          <div class="contact-icon" aria-hidden="true">💬</div>
           <div>
             <h3>WhatsApp</h3>
             <p>Primary way to reach us. Fastest response.</p>
             <a
               href="https://wa.me/447393159712?text=Hi%20Maverick%20Gaming%2C%20I%20need%20help!"
               target="_blank"
+              rel="noopener noreferrer"
               class="btn btn-gold"
             >
               Open WhatsApp Chat
@@ -490,8 +569,8 @@
           </div>
         </div>
         <div class="contact-item">
-          <div class="contact-icon contact-icon-fb">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="28" height="28">
+          <div class="contact-icon contact-icon-fb" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="28" height="28" aria-hidden="true">
               <path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.235 2.686.235v2.97h-1.513c-1.491 0-1.956.93-1.956 1.886v2.269h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/>
             </svg>
           </div>
@@ -501,6 +580,7 @@
             <a
               href="https://www.facebook.com/maverick.gaming.822160"
               target="_blank"
+              rel="noopener noreferrer"
               class="btn btn-facebook"
             >
               Visit Facebook Page
@@ -508,8 +588,8 @@
             <a
               href="https://m.me/maverick.gaming.822160"
               target="_blank"
-              class="btn btn-outline"
-              style="margin-top: 8px;"
+              rel="noopener noreferrer"
+              class="btn btn-outline mt-8"
             >
               Chat on Messenger
             </a>
@@ -525,32 +605,39 @@
     </div>
   </section>
 
+  </main><!-- /#main-content -->
+
   <!-- ========== FOOTER ========== -->
-  <footer class="footer">
-    <img src="logo.jpg" alt="" class="footer-bg-logo" aria-hidden="true" />
+  <footer class="footer" role="contentinfo">
+    <img src="logo.webp" alt="" class="footer-bg-logo" aria-hidden="true" width="160" height="112" loading="lazy" />
     <div class="container">
       <div class="footer-top">
         <div class="footer-brand">
-          <img src="logo.jpg" alt="Maverick Gaming" class="footer-logo" />
+          <picture>
+            <source srcset="logo.webp" type="image/webp" />
+            <img src="logo.jpg" alt="Maverick Gaming" class="footer-logo" width="36" height="36" loading="lazy" />
+          </picture>
           <span>Maverick Gaming</span>
         </div>
-        <div class="footer-links">
-          <a href="#how-it-works">How It Works</a>
-          <a href="#games">Games</a>
-          <a href="#payments">Payments</a>
-          <a href="#share">Share</a>
-          <a href="#faq">FAQ</a>
-          <a href="#contact">Contact</a>
-        </div>
+        <nav aria-label="Footer navigation">
+          <div class="footer-links">
+            <a href="#how-it-works">How It Works</a>
+            <a href="#games">Games</a>
+            <a href="#payments">Payments</a>
+            <a href="#share">Share</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </nav>
         <div class="footer-socials">
-          <a href="https://wa.me/447393159712" target="_blank" class="footer-social-btn footer-social-wa" aria-label="WhatsApp">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="white" width="18" height="18"><path d="M16 0C7.164 0 0 7.163 0 16c0 2.824.738 5.47 2.027 7.773L0 32l8.465-2.02A15.93 15.93 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm0 29.333a13.27 13.27 0 01-6.756-1.845l-.484-.287-5.024 1.199 1.224-4.893-.316-.502A13.232 13.232 0 012.667 16C2.667 8.636 8.636 2.667 16 2.667S29.333 8.636 29.333 16 23.364 29.333 16 29.333zm7.27-9.862c-.398-.199-2.352-1.16-2.717-1.292-.364-.133-.63-.199-.895.2-.265.398-1.028 1.292-1.26 1.558-.232.265-.464.298-.862.1-.398-.2-1.681-.62-3.202-1.977-1.183-1.056-1.982-2.36-2.215-2.758-.232-.398-.025-.613.175-.811.179-.178.398-.464.597-.696.199-.232.265-.398.398-.664.133-.265.066-.497-.033-.696-.1-.199-.895-2.157-1.226-2.953-.323-.776-.65-.67-.895-.683l-.763-.013c-.265 0-.696.1-1.06.497-.364.398-1.393 1.36-1.393 3.317s1.426 3.847 1.625 4.112c.199.265 2.806 4.283 6.797 6.008.95.41 1.691.655 2.268.838.953.303 1.82.26 2.505.157.764-.113 2.352-.961 2.683-1.89.332-.928.332-1.724.232-1.89-.099-.166-.364-.265-.762-.464z"/></svg>
+          <a href="https://wa.me/447393159712" target="_blank" rel="noopener noreferrer" class="footer-social-btn footer-social-wa" aria-label="Chat on WhatsApp">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="white" width="18" height="18" aria-hidden="true"><path d="M16 0C7.164 0 0 7.163 0 16c0 2.824.738 5.47 2.027 7.773L0 32l8.465-2.02A15.93 15.93 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm0 29.333a13.27 13.27 0 01-6.756-1.845l-.484-.287-5.024 1.199 1.224-4.893-.316-.502A13.232 13.232 0 012.667 16C2.667 8.636 8.636 2.667 16 2.667S29.333 8.636 29.333 16 23.364 29.333 16 29.333zm7.27-9.862c-.398-.199-2.352-1.16-2.717-1.292-.364-.133-.63-.199-.895.2-.265.398-1.028 1.292-1.26 1.558-.232.265-.464.298-.862.1-.398-.2-1.681-.62-3.202-1.977-1.183-1.056-1.982-2.36-2.215-2.758-.232-.398-.025-.613.175-.811.179-.178.398-.464.597-.696.199-.232.265-.398.398-.664.133-.265.066-.497-.033-.696-.1-.199-.895-2.157-1.226-2.953-.323-.776-.65-.67-.895-.683l-.763-.013c-.265 0-.696.1-1.06.497-.364.398-1.393 1.36-1.393 3.317s1.426 3.847 1.625 4.112c.199.265 2.806 4.283 6.797 6.008.95.41 1.691.655 2.268.838.953.303 1.82.26 2.505.157.764-.113 2.352-.961 2.683-1.89.332-.928.332-1.724.232-1.89-.099-.166-.364-.265-.762-.464z"/></svg>
           </a>
-          <a href="https://m.me/maverick.gaming.822160" target="_blank" class="footer-social-btn footer-social-msg" aria-label="Messenger">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="white" width="18" height="18"><path d="M16 0C7.164 0 0 6.716 0 15c0 4.556 1.978 8.648 5.148 11.535V32l4.806-2.637A17.19 17.19 0 0016 30c8.836 0 16-6.716 16-15S24.836 0 16 0zm1.67 20.186l-4.078-4.35-7.956 4.35 8.747-9.286 4.176 4.35 7.858-4.35-8.747 9.286z"/></svg>
+          <a href="https://m.me/maverick.gaming.822160" target="_blank" rel="noopener noreferrer" class="footer-social-btn footer-social-msg" aria-label="Chat on Messenger">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="white" width="18" height="18" aria-hidden="true"><path d="M16 0C7.164 0 0 6.716 0 15c0 4.556 1.978 8.648 5.148 11.535V32l4.806-2.637A17.19 17.19 0 0016 30c8.836 0 16-6.716 16-15S24.836 0 16 0zm1.67 20.186l-4.078-4.35-7.956 4.35 8.747-9.286 4.176 4.35 7.858-4.35-8.747 9.286z"/></svg>
           </a>
-          <a href="https://www.facebook.com/maverick.gaming.822160" target="_blank" class="footer-social-btn footer-social-fb" aria-label="Facebook">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="18" height="18"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.235 2.686.235v2.97h-1.513c-1.491 0-1.956.93-1.956 1.886v2.269h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
+          <a href="https://www.facebook.com/maverick.gaming.822160" target="_blank" rel="noopener noreferrer" class="footer-social-btn footer-social-fb" aria-label="Visit Facebook page">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="18" height="18" aria-hidden="true"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.235 2.686.235v2.97h-1.513c-1.491 0-1.956.93-1.956 1.886v2.269h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
           </a>
         </div>
       </div>
@@ -568,10 +655,11 @@
   <a
     href="https://m.me/maverick.gaming.822160"
     target="_blank"
+    rel="noopener noreferrer"
     class="messenger-float"
     aria-label="Chat on Messenger"
   >
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="white" width="30" height="30">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="white" width="30" height="30" aria-hidden="true">
       <path d="M16 0C7.164 0 0 6.716 0 15c0 4.556 1.978 8.648 5.148 11.535V32l4.806-2.637A17.19 17.19 0 0016 30c8.836 0 16-6.716 16-15S24.836 0 16 0zm1.67 20.186l-4.078-4.35-7.956 4.35 8.747-9.286 4.176 4.35 7.858-4.35-8.747 9.286z"/>
     </svg>
     <span class="whatsapp-label">Messenger</span>
@@ -581,10 +669,11 @@
   <a
     href="https://wa.me/447393159712?text=Hi%20Maverick%20Gaming%2C%20I%20have%20a%20question!"
     target="_blank"
+    rel="noopener noreferrer"
     class="whatsapp-float"
     aria-label="Chat on WhatsApp"
   >
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="white" width="30" height="30">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="white" width="30" height="30" aria-hidden="true">
       <path d="M16 0C7.164 0 0 7.163 0 16c0 2.824.738 5.47 2.027 7.773L0 32l8.465-2.02A15.93 15.93 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm0 29.333a13.27 13.27 0 01-6.756-1.845l-.484-.287-5.024 1.199 1.224-4.893-.316-.502A13.232 13.232 0 012.667 16C2.667 8.636 8.636 2.667 16 2.667S29.333 8.636 29.333 16 23.364 29.333 16 29.333zm7.27-9.862c-.398-.199-2.352-1.16-2.717-1.292-.364-.133-.63-.199-.895.2-.265.398-1.028 1.292-1.26 1.558-.232.265-.464.298-.862.1-.398-.2-1.681-.62-3.202-1.977-1.183-1.056-1.982-2.36-2.215-2.758-.232-.398-.025-.613.175-.811.179-.178.398-.464.597-.696.199-.232.265-.398.398-.664.133-.265.066-.497-.033-.696-.1-.199-.895-2.157-1.226-2.953-.323-.776-.65-.67-.895-.683l-.763-.013c-.265 0-.696.1-1.06.497-.364.398-1.393 1.36-1.393 3.317s1.426 3.847 1.625 4.112c.199.265 2.806 4.283 6.797 6.008.95.41 1.691.655 2.268.838.953.303 1.82.26 2.505.157.764-.113 2.352-.961 2.683-1.89.332-.928.332-1.724.232-1.89-.099-.166-.364-.265-.762-.464z"/>
     </svg>
     <span class="whatsapp-label">Chat with Us</span>
@@ -592,34 +681,36 @@
 
   <!-- ========== AI CHAT WIDGET ========== -->
   <div class="chatbot-wrap" id="chatbotWrap">
-    <button class="chatbot-toggle" id="chatbotToggle" aria-label="Open chat assistant">
-      <span class="chatbot-toggle-icon">🤖</span>
+    <button class="chatbot-toggle" id="chatbotToggle" aria-label="Open chat assistant" aria-expanded="false" aria-controls="chatbotBox">
+      <span class="chatbot-toggle-icon" aria-hidden="true">🤖</span>
       <span class="chatbot-toggle-label">Ask Anything</span>
     </button>
-    <div class="chatbot-box" id="chatbotBox">
+    <div class="chatbot-box" id="chatbotBox" role="dialog" aria-label="Maverick Gaming chat assistant" aria-modal="false">
       <div class="chatbot-header">
         <div class="chatbot-header-info">
-          <span class="chatbot-avatar">🎰</span>
+          <span class="chatbot-avatar" aria-hidden="true">🎰</span>
           <div>
             <strong>Maverick Assistant</strong>
-            <span class="chatbot-status">● Online</span>
+            <span class="chatbot-status" aria-label="Online">● Online</span>
           </div>
         </div>
         <button class="chatbot-close" id="chatbotClose" aria-label="Close chat">✕</button>
       </div>
-      <div class="chatbot-messages" id="chatbotMessages">
+      <div class="chatbot-messages" id="chatbotMessages" aria-live="polite" aria-label="Chat messages">
         <div class="chat-msg bot-msg">
           <p>Hey! Welcome to Maverick Gaming 🎰</p>
           <p>I can answer questions about our games, payments, and how to get started. What would you like to know?</p>
         </div>
       </div>
       <div class="chatbot-input-wrap">
+        <label for="chatbotInput" class="sr-only">Type your message</label>
         <input
           type="text"
           id="chatbotInput"
           class="chatbot-input"
           placeholder="Ask me anything..."
           autocomplete="off"
+          aria-label="Type your message"
         />
         <button class="chatbot-send" id="chatbotSend" aria-label="Send message">
           ➤
